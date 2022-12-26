@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <title>Chat App</title>
+</head>
+
+<body>
+    <section class="chat_section">
+        
+        <div>
+            <textarea id="senderName" cols="15" rows="1" style="overflow:hidden;resize:none;"
+                placeholder="Write a Sender Name..."></textarea>
+        </div>
+        <div class="brand">
+            <img src="/wassup.png" height="30px" width="30px" />
+            <h1>Chat App : channel Chat</h1>
+            <h3 class="userData"></h3>
+            <h3 class="send_to"></h3>
+        </div>
+        <div class="message_area">
+            <!--<div class="incoming message">
+               //code add in this area dynamically
+               //single check
+               <i class="fa-solid fa-check"></i>
+            </div>
+            <div class="outgoing message">
+               
+            </div>-->
+        </div>
+        <div>
+            <textarea id="textarea" cols="30" rows="1" style="overflow:hidden;resize:none;"
+                placeholder="Write a message..."></textarea>
+        </div>
+    </section>
+    <script src="./socket.io/socket.io.js"></script>
+    <script src="./channelChatClient.js"></script>
+</body>
+
+</html>
